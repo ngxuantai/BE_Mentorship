@@ -77,7 +77,7 @@ builder.Services.AddCors(options =>
 
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "BE_Mentorship", Version = "v1" });
 
 });
 
@@ -92,7 +92,7 @@ if (app.Environment.IsDevelopment())
     //app.UseSwaggerUI();
     // Generate Swagger YAML file
 
-    app.UseSwaggerUI(x => { x.SwaggerEndpoint("/swagger/v1/swagger.json", "My API v1"); });
+    app.UseSwaggerUI(x => { x.SwaggerEndpoint("/swagger/v1/swagger.json", "BE_Mentorship v1"); });
 }
 
 
